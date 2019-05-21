@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:layout_marginStart="15dp"
+            android:layout_alignTop="@+id/help_title" />
+
+        <TextView
+            android:id="@+id/help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/common_feedback_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/common_feedback_type"
+        android:textSize="15sp"/>
+
+    <com.ubang.huang.ubangapp.util.HotTagView
+        android:id="@+id/feedback_type"
+        app:stroke_width="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text_size="10sp"
+        app:textview_padding_left="5dp"
+        app:textview_padding_right="5dp"
+        app:textview_padding_top="3dp"
+        app:textview_padding_bottom="3dp"
+        app:textview_margin_top="10dp"
+        app:textview_margin_left="5dp"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/common_feedback_idea_title"/>
+
+        <TextView
+            android:id="@+id/limit"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/title"
+            android:layout_height="wrap_content"
+            android:text="@string/common_feedback_idea_limit"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/idea"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLength="200"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:hint="@string/common_feedback_idea_hint"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_color"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonstyle_gray"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="@string/common_feedback_idea_submit"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

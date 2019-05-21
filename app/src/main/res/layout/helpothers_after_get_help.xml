@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:layout_marginStart="15dp"
+            android:layout_alignTop="@+id/help_title" />
+
+        <TextView
+            android:id="@+id/help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_ask_help"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/publish"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/publish"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_alignTop="@+id/help_title" />
+    </RelativeLayout>
+
+
+
+    <include
+        layout="@layout/helpothers_recycle_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/arrive_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle_normal"
+                android:text="@string/helpother_helper_startposition" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/arrive_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle_normal"
+                android:text="@string/helpother_helper_endposition" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/communicate_helper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle_normal"
+                android:text="@string/helpother_communication" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/help_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle_normal"
+                android:text="@string/helpother_help_finish" />
+        </LinearLayout>
+</LinearLayout>

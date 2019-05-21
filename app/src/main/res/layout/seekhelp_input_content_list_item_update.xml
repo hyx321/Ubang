@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/camera_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/camera1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/seekhelp_help_option_camera"
+            android:layout_below="@+id/camera"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/album_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/album"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_help_option_album"
+            android:layout_below="@+id/album"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancel_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/cancel_help"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cancel_help"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_help_option_cancel"
+            android:layout_below="@+id/cancel_help"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finish_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/finish_help"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/finish_help"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_help_option_finish"
+            android:layout_below="@+id/finish_help"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

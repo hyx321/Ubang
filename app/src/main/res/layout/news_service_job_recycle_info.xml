@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="6dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/news_service_job_position"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/position"
+                android:layout_below="@+id/position"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="@string/news_service_job_company" />
+
+            <com.ubang.huang.ubangapp.util.HotTagView
+                android:id="@+id/info_tag"
+                android:layout_marginTop="15dp"
+                android:layout_alignStart="@+id/company"
+                android:layout_below="@+id/company"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text_size="6sp"
+                app:text_color="#e7180101"
+                app:stroke_width="1dp"
+                app:line_color="#d1d1d1"
+                app:background_color="@color/gray"
+                app:textview_padding_left="5dp"
+                app:textview_margin_right="10dp"
+                app:textview_margin_top="5dp"
+                app:textview_padding="6dp"/>
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news_service_job_salary"
+                android:layout_alignTop="@+id/position"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

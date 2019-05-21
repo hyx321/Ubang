@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/line_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_cancel"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seekhelp_help_content"
+            android:layout_alignTop="@+id/cancel"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_submit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignTop="@+id/cancel"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/edit_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <EditText
+                    android:id="@+id/edit_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:lines="4"
+                    android:textSize="15sp"
+                    android:hint="@string/seekhelp_help_content_edit"/>
+
+                <com.jcodecraeer.xrecyclerview.XRecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_below="@+id/edit_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/ablum_block"
+                    android:layout_below="@+id/recyclerview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/grey"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/pic_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/camera"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:layout_below="@+id/pic_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seekhelp_help_content_camera"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/split_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color"/>
+
+
+          <!--  <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seekhelp_customize_rule"
+                    android:layout_alignTop="@+id/area_button"
+                    android:layout_marginTop="3dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="20dp"/>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/area_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:sb_checked="false"
+                    app:sb_enable_effect="true"/>
+            </RelativeLayout>-->
+           <!-- <include
+                layout="@layout/seekhelp_publish_content_time"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

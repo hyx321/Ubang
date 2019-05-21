@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/alarm_block"
+            android:layout_width="match_parent"
+            android:background="#F44336"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/seekhelp_help_content"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/content"
+                android:layout_alignStart="@+id/content"
+                android:text="@string/seekhelp_help_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

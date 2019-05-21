@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:layout_marginStart="15dp"
+            android:layout_alignTop="@+id/help_title" />
+        <TextView
+            android:id="@+id/help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_help_detail_list"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/help_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_help_detail_list_type"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/help_type"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seekhelp_help_detail_list_type"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/help_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seekhelp_help_detail_list_start_time"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/create_start_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/seekhelp_help_detail_list_start_detail_time"
+            android:layout_alignTop="@+id/help_create_time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/help_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seekhelp_help_detail_list_end_time"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/help_create_time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/create_end_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/seekhelp_help_detail_list_start_detail_time"
+            android:layout_alignTop="@+id/help_end_time"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/seekhelp_help_detail_list_total_time"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/total_distant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/total_time"
+            android:text="@string/seekhelp_help_detail_list_total_distant"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/runman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/run" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/contain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.ubang.huang.ubangapp.util.HotTagView
+        android:id="@+id/help_type"
+        app:stroke_width="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text_size="15sp"
+        app:textview_margin_left="5dp"/>
+
+    <com.ubang.huang.ubangapp.util.HotTagView
+        android:id="@+id/help_sort"
+        app:stroke_width="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text_size="15sp"
+        app:textview_margin_left="5dp"/>
+</LinearLayout>
+

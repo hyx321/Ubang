@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">U帮</string>
+
+    <integer-array name="test_arr">
+        <item>@drawable/pic4</item>
+        <item>@drawable/pic5</item>
+        <item>@drawable/pic6</item>
+    </integer-array>
+
+    <string name="content">这是内容</string>
+
+    <!--侧滑页面-->
+    <string name="Info">个人信息</string>
+    <string name="FeedBack">反馈意见</string>
+    <string name="About">关于</string>
+    <string name="Settings">设置</string>
+    <string name="Quit">退出登录</string>
+
+    <string name="seekhelp_ask_help">求助</string>
+    <string name="seekhelp_alarm_help">求助</string>
+    <string name="seekhelp_normal_help">普通求助</string>
+
+    <string name="seekhelp_myhelp_list">帮助列表</string>
+    <string name="seekhelp_myhelp_type">帮助类型</string>
+    <string name="seekhelp_myhelp_time">时间</string>
+    <string name="seekhelp_myhelp_status">状态</string>
+
+    <string name="seekhelp_input_postion">输入你的位置</string>
+
+    <string name="seekhelp_helping">帮助中</string>
+    <string name="seekhelp_helped">已帮助</string>
+    <string name="seekhelp_unhelp">未帮助</string>
+
+    <string name="seekhelp_area">输入数字</string>
+    <string name="seekhelp_customize_rule">求助规则</string>
+    <string name="seekhelp_customize_area">求助范围</string>
+    <string name="seekhelp_customize_time">求助时间</string>
+    <string name="seekhelp_customize_sex">性别</string>
+    <string name="seekhelp_customize_man">男</string>
+    <string name="seekhelp_customize_woman">女</string>
+    <string name="seekhelp_customize_all">全部</string>
+    <string name="seekhelp_define_area">求助范围</string>
+    <string name="seekhelp_define_area_all">不限</string>
+    <string name="seekhelp_define_area_m">米</string>
+    <string name="seekhelp_define_date">剩余时间</string>
+    <string name="seekhelp_area_title">定义求助范围</string>
+    <string name="seekhelp_help_content">求助内容</string>
+    <string name="seekhelp_help_alarm_content">报警内容</string>
+    <string name="seekhelp_help_content_camera">拍照/相册</string>
+    <string name="seekhelp_help_content_area">可见范围</string>
+    <string name="seekhelp_help_content_edit">输入求助内容</string>
+    <string name="seekhelp_help_send_message">联系对方</string>
+    <string name="seekhelp_help_option_camera">相机</string>
+    <string name="seekhelp_help_call">打电话</string>
+    <string name="seekhelp_help_option_album">相册</string>
+    <string name="seekhelp_help_option_cancel">取消</string>
+    <string name="seekhelp_help_option_finish">完成</string>
+    <string name="seekhelp_help_option_send">发送给对方</string>
+
+    <string name="seekhelp_publis_position">地址</string>
+    <string name="seekhelp_publis_detail_position">详细地址</string>
+
+    <string name="common_submit">确定</string>
+    <string name="common_cancel">取消</string>
+
+    <string name="seekhelp_danger_help_title">危险求助</string>
+    <string name="seekhelp_danger_help_name">姓名</string>
+    <string name="seekhelp_danger_help_sex">性别</string>
+    <string name="seekhelp_danger_help_phone">手机</string>
+    <string name="seekhelp_danger_help_city">城市</string>
+    <string name="seekhelp_danger_help_address">地址</string>
+    <string name="seekhelp_danger_help_detail_address">详细地址</string>
+    <string name="seekhelp_danger_help_latLng">经纬度</string>
+
+    <string name="news_service_title">U帮助手</string>
+    <string name="news_service_plate_security">校园安全</string>
+    <string name="news_service_plate_job">职业信息</string>
+    <string name="news_service_hint">说出你的问题</string>
+    <string name="news_service">经纬度</string>
+
+    <string name="news_service_campus">校园安全</string>
+    <string name="news_service_campus_title">标题</string>
+    <string name="news_service_campus_content">内容</string>
+    <string name="news_service_campus_source">来源</string>
+    <string name="news_service_campus_date">日期</string>
+
+    <string name="news_service_job_position">职位</string>
+    <string name="news_service_job_salary">薪水</string>
+    <string name="news_service_job_company">公司名</string>
+    <string name="news_service_job_title">招聘信息</string>
+
+    <string name="helpother_label">分类</string>
+    <string name="helpother_helper_startposition">导航到求助者</string>
+    <string name="helpother_helper_endposition">导航到目的地</string>
+    <string name="helpother_helper_question">求助者的问题</string>
+    <string name="helpother_communication">联系求助者</string>
+    <string name="helpother_help_finish">结束帮助</string>
+    <string name="helpother_get_help">接收帮助</string>
+    <string name="helpother_title_map">周围</string>
+    <string name="helpother_round_title">周边帮助</string>
+    <string name="helpother_round_hall">大厅</string>
+    <string name="helpother_my_help">我的帮助</string>
+
+    <string name="login_phone">输入你的电话</string>
+    <string name="login_pwd">输入密码</string>
+    <string name="login_pwd_again">再输入一次密码</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="login_regist">注册U帮</string>
+    <string name="login_login">登录</string>
+    <string name="login_slogan">互助，让我们相遇</string>
+    <string name="login_back">互助，让我们相遇</string>
+    <string name="login_vertify">输入验证码</string>
+    <string name="login_send_vertify">发送验证码</string>
+
+    <string name="regiest_title">注册账号</string>
+    <string name="regiest_phone">你的手机号</string>
+    <string name="regiest_nickname">你的昵称</string>
+    <string name="regiest_pwd">你的密码</string>
+    <string name="regiest_button">注册</string>
+    <string name="regiest_pwd_again">再输入一遍密码</string>
+    <string name="regiest_name">你的真实姓名</string>
+
+    <string name="seekhelp_help_info">求助信息</string>
+    <string name="seekhelp_help_detail">详情</string>
+    <string name="seekhelp_help_detail_list">求助详情信息</string>
+    <string name="seekhelp_help_detail_list_type">类型</string>
+    <string name="seekhelp_help_detail_list_start_time">开始时间</string>
+    <string name="seekhelp_help_detail_list_end_time">结束时间</string>
+    <string name="seekhelp_help_detail_list_start_detail_time">开始具体时间</string>
+    <string name="seekhelp_help_detail_list_end_detail_time">结束具体时间</string>
+    <string name="seekhelp_help_detail_list_total_time">结束具体时间</string>
+    <string name="seekhelp_help_detail_list_total_distant">距离</string>
+    <string name="seekhelp_help_detail_description">评价</string>
+    <string name="seekhelp_help_detail_rating">0</string>
+    <string name="seekhelp_help_detail_submit">确定</string>
+    <string name="seekhelp_help_detail_cancel">取消求助</string>
+    <string name="seekhelp_help_detail_modify">编辑求助</string>
+
+    <string name="common_feedback_title">反馈意见</string>
+    <string name="common_feedback_type">请选择反馈类型</string>
+    <string name="common_feedback_type_seekhelp">U友求助功能</string>
+    <string name="common_feedback_type_help">帮助U友功能</string>
+    <string name="common_feedback_type_news">资讯功能</string>
+    <string name="common_feedback_type_others">其他</string>
+    <string name="common_feedback_idea_title">补充详情</string>
+    <string name="common_feedback_idea_hint">说出你的想法</string>
+    <string name="common_feedback_idea_submit">提交</string>
+    <string name="common_feedback_idea_limit">0/200</string>
+
+    <string name="common_about_title">关于</string>
+    <string name="common_about_name">U帮</string>
+    <string name="common_about_description">一个大学生互助的平台</string>
+    <string name="common_about_communication">联系我们 7915110120@qq.com</string>
+
+    <string name="common_info_title">基本信息</string>
+    <string name="common_info_avatar">头像</string>
+    <string name="common_info_nickname">昵称</string>
+    <string name="common_info_name">姓名</string>
+    <string name="common_info_sex">性别</string>
+    <string name="common_info_wechat">微信</string>
+    <string name="common_info_qq">QQ</string>
+    <string name="common_info_email">邮箱</string>
+    <string name="common_info_signature">个人签名</string>
+    <string name="common_info_phone">手机号</string>
+    <string name="common_info_detail">未绑定</string>
+    <string name="common_info_content">这个U友很懒</string>
+</resources>
+

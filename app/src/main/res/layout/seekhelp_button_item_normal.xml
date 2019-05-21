@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/contain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/emergency_help"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:text="@string/seekhelp_alarm_help"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_button"/>
+
+    <View
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_weight="1"/>
+ <!--   <Buttons
+        android:id="@+id/normal_help"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="@string/seekhelp_normal_help"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/circle_button_normal"/>-->
+
+</LinearLayout>
+

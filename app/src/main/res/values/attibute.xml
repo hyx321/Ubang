@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="style" format="enum">
+            <enum name="circle" value="1"/>
+            <enum name="round" value="2"/>
+        </attr>
+        <attr name="radius" format="dimension"/>ssss
+    </declare-styleable>
+
+    <declare-styleable name="HotTagView">
+        <attr name="background_color" format="color" />
+        <attr name="line_color" format="color" />
+        <attr name="stroke_width" format="dimension" />
+
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+
+        <attr name="textview_margin_left" format="dimension"/>
+        <attr name="textview_margin_right" format="dimension"/>
+        <attr name="textview_margin_top" format="dimension"/>
+        <attr name="textview_margin_bottom" format="dimension"/>
+        <attr name="textview_margin" format="dimension"/>
+
+        <attr name="textview_padding_left" format="dimension"/>
+        <attr name="textview_padding_right" format="dimension"/>
+        <attr name="textview_padding_top" format="dimension"/>
+        <attr name="textview_padding_bottom" format="dimension"/>
+        <attr name="textview_padding" format="dimension"/>
+    </declare-styleable>
+</resources>

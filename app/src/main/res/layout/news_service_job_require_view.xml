@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/degree"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="学历"
+             android:textSize="15sp"
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="20dp"/>
+
+         <com.ubang.huang.ubangapp.util.HotTagView
+             android:id="@+id/degree_tag"
+             android:layout_below="@+id/degree"
+             android:layout_marginTop="5dp"
+             app:stroke_width="1dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:text_size="15sp"
+             app:textview_margin_left="5dp"/>
+
+         <TextView
+             android:id="@+id/experience"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="经验"
+             android:layout_below="@+id/degree_tag"
+             android:textSize="15sp"
+             android:layout_marginStart="15dp"
+             android:layout_marginTop="20dp"/>
+
+         <com.ubang.huang.ubangapp.util.HotTagView
+             android:id="@+id/experience_tag"
+             android:layout_below="@+id/experience"
+             android:layout_marginTop="5dp"
+             app:stroke_width="1dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:text_size="15sp"
+             app:textview_margin_left="5dp"/>
+      </RelativeLayout>
+   </ScrollView>
+   <include
+      layout="@layout/news_service_job_bottom_button"/>
+</LinearLayout>

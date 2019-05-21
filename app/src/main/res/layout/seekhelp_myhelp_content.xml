@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="6dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/help_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/seekhelp_myhelp_type"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/time_pic"
+                    android:src="@drawable/time"
+                    android:layout_below="@+id/help_type"
+                    android:layout_alignStart="@+id/help_type"
+                    android:layout_alignTop="@+id/help_time"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip" />
+
+                <TextView
+                    android:id="@+id/help_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/time_pic"
+                    android:layout_marginStart="5dp"
+                    android:layout_below="@+id/help_type"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:text="@string/seekhelp_myhelp_time" />
+
+                <TextView
+                    android:id="@+id/pic"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/help_time"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_alignTop="@+id/help_content"
+                    android:layout_alignStart="@+id/help_type"
+                    android:background="@drawable/textview_background"/>
+                <TextView
+                    android:id="@+id/help_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/help_time"
+                    android:layout_toEndOf="@+id/pic"
+                    android:textSize="15sp"
+                    android:layout_alignStart="@id/help_time"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/seekhelp_help_content"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/help_status_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seekhelp_myhelp_status"
+                    android:textSize="15sp"
+                    android:layout_alignTop="@+id/help_type"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/help_status"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/help_status_info"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/textview_background"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

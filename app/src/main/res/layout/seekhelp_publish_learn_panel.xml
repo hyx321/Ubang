@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/pic"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/textview_background"/>
+
+    <RelativeLayout
+        android:id="@+id/block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/pic">
+        <TextView
+            android:id="@+id/position"
+            android:text="@string/seekhelp_publis_position"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_position"
+            android:layout_below="@+id/position"
+            android:text="@string/seekhelp_publis_detail_position"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@+id/detail_position"
+            android:layout_alignStart="@+id/position"
+            android:layout_width="match_parent"
+            android:layout_alignEnd="@+id/position"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pic1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignStart="@+id/pic"
+        android:layout_below="@id/pic"
+        android:background="@drawable/textview_background"/>
+
+    <RelativeLayout
+        android:id="@+id/content_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/block"
+        android:layout_below="@+id/block"
+        android:layout_alignEnd="@+id/block">
+        <TextView
+            android:id="@+id/help_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seekhelp_help_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_below="@+id/help_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/seekhelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pic"
+        android:layout_alignEnd="@+id/block"
+        android:layout_below="@+id/content_block"
+        android:layout_marginTop="15dp"
+        android:text="@string/common_submit"
+        android:textColor="#0066FF"
+        android:background="@drawable/buttonstyle_normal"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

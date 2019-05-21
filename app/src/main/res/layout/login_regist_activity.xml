@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:contentDescription="@null"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regiest_title"
+        android:textSize="25sp"
+        android:id="@+id/title"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/regiest_phone"
+        android:id="@+id/phone"
+        android:inputType="numberSigned"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/title"
+        android:drawableBottom="@drawable/editline"
+        android:paddingStart="65dp"
+        android:background="@null"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/regiest_nickname"
+        android:id="@+id/nickname"
+        android:paddingLeft="65dp"
+        android:background="@null"
+        android:layout_alignStart="@+id/phone"
+        android:layout_alignEnd="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/editline"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/regiest_pwd"
+        android:paddingLeft="65dp"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:layout_alignStart="@+id/phone"
+        android:layout_alignEnd="@+id/phone"
+        android:drawableBottom="@drawable/editline"
+        android:layout_below="@+id/nickname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:id="@+id/pwd_again"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/regiest_pwd_again"
+        android:paddingLeft="65dp"
+        android:background="@null"
+        android:layout_alignStart="@+id/phone"
+        android:inputType="textPassword"
+        android:layout_alignEnd="@+id/phone"
+        android:drawableBottom="@drawable/editline"
+        android:layout_below="@+id/pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <RelativeLayout
+        android:layout_toEndOf="@+id/pwd_again"
+        android:layout_below="@+id/pwd_again"
+        android:layout_width="match_parent"
+        android:layout_height="15dp">
+        <ViewStub
+            android:id="@+id/alarm_point"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout="@layout/login_red_point"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/regiest_name"
+        android:layout_alignStart="@+id/phone"
+        android:layout_alignEnd="@+id/phone"
+        android:background="@null"
+        android:drawableBottom="@drawable/editline"
+        android:paddingLeft="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pwd_again"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:id="@+id/vertify"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:background="@null"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/name"
+        android:drawableBottom="@drawable/editline"
+        android:hint="@string/login_vertify" />
+
+    <TextView
+        android:id="@+id/send_vertify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/vertify"
+        android:background="@null"
+        android:paddingBottom="3dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="3dp"
+        android:layout_alignEnd="@+id/name"
+        android:text="@string/login_send_vertify" />
+
+
+    <Button
+        android:id="@+id/regist"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/pwd"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/buttonstyle_gray"
+        android:text="@string/regiest_button"
+        android:textColor="#0066FF" />
+</RelativeLayout>

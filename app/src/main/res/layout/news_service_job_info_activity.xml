@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="26dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/back"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/seekhelp_help_detail"
+        android:layout_alignTop="@+id/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/back"
+        android:background="@color/line_color"/>
+
+    <RelativeLayout
+        android:id="@+id/job_info"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_marginStart="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:layout_alignBottom="@+id/position"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="12sp"/>
+
+        <com.ubang.huang.ubangapp.util.HotTagView
+            android:id="@+id/tag_info"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/position"
+            android:layout_alignStart="@+id/position"
+            app:text_size="6sp"
+            app:stroke_width="1dp"
+            app:line_color="#d1d1d1"
+            app:textview_margin_right="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/split_line_up"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/job_info"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="2dp"/>
+
+    <RelativeLayout
+        android:id="@+id/company_info"
+        android:layout_below="@+id/split_line_up"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/company_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/company_pic"
+            android:text="@string/content"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/company_field"
+            android:layout_alignBottom="@+id/company_pic"
+            android:layout_alignStart="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/split_line_down"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/company_info"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="2dp"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/detail"
+        android:textStyle="bold"
+        android:text="职业详情"
+        android:layout_below="@+id/split_line_down"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/require_info"
+        android:text="@string/content"
+        android:layout_below="@+id/detail"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

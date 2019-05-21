@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="#dddddd">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <FrameLayout
+            android:id="@+id/fl_tab_container"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="64dp"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom"
+            app:bb_tabXmlResource="@xml/contain_bottombar_tabs"
+            app:bb_behavior="shifting|underNavbar" />
+    </FrameLayout>
+
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_campus"
+        icon="@drawable/sos"
+        title="求助"
+        barColorWhenSelected="@color/colorAccent" />
+    <tab
+        id="@+id/tab_round"
+        icon="@drawable/hall"
+        title="大厅"
+        barColorWhenSelected="#5D4037" />
+    <tab
+        id="@+id/tab_learn"
+        icon="@drawable/news"
+        title="资讯"
+        barColorWhenSelected="#FF9800"
+        badgeHidesWhenActive="true"/>
+</tabs>

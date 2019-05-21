@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="6dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:id="@+id/unhelp_block"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textview_background_unhelp"/>
+                <TextView
+                    android:layout_below="@+id/status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/seekhelp_unhelp"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helping_block"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/helping_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textview_background_helping"/>
+                <TextView
+                    android:layout_below="@+id/helping_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/seekhelp_helping"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helped_block"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/helped_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textview_background_helped" />
+                <TextView
+                    android:layout_below="@+id/helped_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/seekhelp_helped"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="6dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <com.suke.widget.SwitchButton
+                  android:id="@+id/emergency_switch"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="20dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  app:sb_checked="false"
+                  app:sb_checked_color="@color/emegency"
+                  app:sb_uncheck_color="@color/normal"
+                  app:sb_enable_effect="true"/>
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_toStartOf="@+id/emergency_switch">
+
+                 <com.ubang.huang.ubangapp.util.HotTagView
+                     android:layout_marginTop="8dp"
+                     android:id="@+id/help_type"
+                     app:stroke_width="1dp"
+                     android:layout_centerHorizontal="true"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="15sp"
+                     app:text_size="10sp"
+                     app:textview_margin_left="15dp"/>
+              </RelativeLayout>
+
+          </RelativeLayout>
+
+          <include
+              layout="@layout/seekhelp_replace_item_framelayout"/>
+
+      </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>
